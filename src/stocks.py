@@ -5,9 +5,9 @@ from alpha_vantage.timeseries import TimeSeries
 import pandas as pd
 import time
 import logging
-from math import floor
 
-API_KEY = "ANN6AN4B37D0W8EV"
+# TODO: Implement your own key
+API_KEY = "<key>"
 
 
 class Stocks:
