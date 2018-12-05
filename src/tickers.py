@@ -12,6 +12,13 @@ class Tickers:
     url = "https://en.wikipedia.org/wiki/List_of_S%26P_500_companies"
 
     def __init__(self, user='tickers', logger_name='tickers'):
+        """
+        initializes the Tickers object
+
+        :param user: the user to be shows in logging
+        :param logger_name: the name of the logger
+        """
+
         self.user = user
         self.logger_name = logger_name
 
@@ -45,6 +52,13 @@ class Tickers:
         self.tLogger.info("Initialization Complete of {}".format(self.__str__()), extra=self.d)
 
     def scrape_tickers(self):
+        """
+        Get the tickers from the url
+
+        :return: None
+        """
+
+        # Scrape the first 500 tickers
         tickers = []
         for tr_index in range(1, 501):
             tickers.append(self._tr_tags[tr_index].find('a').text)
