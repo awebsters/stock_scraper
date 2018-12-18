@@ -1,5 +1,5 @@
 # Stock Scraper
-This program uses the [Alpha Vantage]((https://www.alphavantage.co/) API to collect stock data 
+This program uses the [Alpha Vantage](https://www.alphavantage.co/) API to collect stock data 
 and store it in pandas data frames. It gets the high, low, open, close, volume and date of the top
 500 stocks in the S&P500 in 1 minute intervals. This program stores the data each time it collects
 new data into the designated file (defaulted to ../data/data.csv or data.csv when necessary).
